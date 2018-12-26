@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pdf:template>
+{{! 解除责令车辆停驶通知书 }}
+<pdf:paper width="595.276" height="841.89" fontName="SimSun" fontSize="13" />
+<pdf:content>
+<pdf:table rect="{13,8.5},{188,128.5}" borderWidth="0.5">
+<pdf:tr height="128.5">
+<pdf:td width="188">
+<pdf:text point="57.5,9.5" fontName="SimHei" fontSize="21.5">解除责令车辆停驶通知书</pdf:text>
+<pdf:line fromPoint="7,31" toPoint="44,31" lineWidth="0.5" />
+<pdf:text point="25,24" static="NO" maxWidth="45" >{{ citizenName }}</pdf:text>
+<pdf:text point="44,24">：</pdf:text>
+<pdf:text point="20,42">因你（单位）</pdf:text>
+<pdf:line fromPoint="50,47" toPoint="100,47" lineWidth="0.5" />
+<pdf:text point="50,40" static="NO">{{ caseReason }}</pdf:text>
+<pdf:text point="100,42">一案，本单位根据《中华人</pdf:text>
+<pdf:text point="7,52">民共和国公路法》地八十五条和交通运输部《路政管理规定》第三十</pdf:text>
+<pdf:text point="7,62">八条之规定，于</pdf:text>
+<pdf:line fromPoint="44,67" toPoint="54,67" lineWidth="0.5" />
+<pdf:text point="44,62" static="NO">{{ sendDate.year }}</pdf:text>
+<pdf:text point="54,62">年</pdf:text>
+<pdf:line fromPoint="62,67" toPoint="72,67" lineWidth="0.5" />
+<pdf:text point="62,62" static="NO">{{ sendDate.month }}</pdf:text>
+<pdf:text point="72,62">月</pdf:text>
+<pdf:line fromPoint="80,67" toPoint="90,67" lineWidth="0.5" />
+<pdf:text point="78,62" static="NO">{{ sendDate.day }}</pdf:text>
+<pdf:text point="90,62">日依法责令</pdf:text>
+<pdf:line fromPoint="115,67" toPoint="145,67" lineWidth="0.5" />
+<pdf:text point="113,62" static="NO">{{ automobileNumber }}</pdf:text>
+<pdf:text point="145,62">号牌的车辆</pdf:text>
+<pdf:text point="7,72">在</pdf:text>
+<pdf:line fromPoint="13,77" toPoint="55,77" lineWidth="0.5" />
+<pdf:text point="13,72" maxWidth="42" static="NO">{{ placePrefix }}</pdf:text>
+<pdf:text point="56,72">临时停放，现决定自</pdf:text>
+<pdf:line fromPoint="105,77" toPoint="115,77" lineWidth="0.5" />
+<pdf:text point="105,72" static="NO">{{ resume_date.year }}</pdf:text>
+<pdf:text point="115,72">年</pdf:text>
+<pdf:line fromPoint="121,77" toPoint="127,77" lineWidth="0.5" />
+<pdf:text point="121,72" static="NO">{{ resume_date.month }}</pdf:text>
+<pdf:text point="127,72">月</pdf:text>
+<pdf:line fromPoint="134,77" toPoint="140,77" lineWidth="0.5" />
+<pdf:text point="134,72" static="NO">{{ resume_date.day }}</pdf:text>
+<pdf:text point="140,72">日予以解除</pdf:text>
+<pdf:text point="17,92">特此通知。</pdf:text>
+
+<pdf:text point="137,94">单位印章</pdf:text>
+<pdf:text point="123,114" static="NO">{{ resume_date.year }}</pdf:text>
+<pdf:text point="136,114">年</pdf:text>
+<pdf:text point="140,114" static="NO">{{ resume_date.month }}</pdf:text>
+<pdf:text point="149,114">月</pdf:text>
+<pdf:text point="154,114" static="NO">{{ resume_date.day }}</pdf:text>
+<pdf:text point="163,114">日</pdf:text>
+
+</pdf:td>
+</pdf:tr>
+</pdf:table>
+</pdf:content>
+</pdf:template>

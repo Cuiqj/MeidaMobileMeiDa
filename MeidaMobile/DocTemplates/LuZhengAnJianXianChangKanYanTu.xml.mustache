@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pdf:template>
+	{{! 路政案件现场勘验图 }}
+	<pdf:paper width="841.89" height="595.276" fontName="SimSun" fontSize="10.5" offset="-2.8,4.2"/>
+	<pdf:content>
+		<pdf:text point="108,2" fontSize="20.5">公路赔（补）偿案件现场勘验图</pdf:text>
+        <!--
+         <pdf:text point="235,17">案号：</pdf:text>
+         <pdf:text point="248,17" static="NO">{{ caseNo }}</pdf:text>-->
+		<pdf:table rect="{16,17},{273,174}" borderWidth="0.5" lineWidth="0.5" padding="1">
+			<pdf:tr height="10">
+				<pdf:td width="13">时间</pdf:td>
+				<pdf:td width="56">
+					<pdf:text point="mid-left:3,6" static="NO">{{ date.year }}</pdf:text>
+					<pdf:text point="mid-left:11,6">年</pdf:text>
+					<pdf:text point="mid-left:18,6" static="NO">{{ date.month }}</pdf:text>
+					<pdf:text point="mid-left:22,6">月</pdf:text>
+					<pdf:text point="mid-left:27,6" static="NO">{{ date.day }}</pdf:text>
+					<pdf:text point="mid-left:31,6">日</pdf:text>
+					<pdf:text point="mid-left:37,6" static="NO">{{ date.hour }}</pdf:text>
+					<pdf:text point="mid-left:41,6">时</pdf:text>
+					<pdf:text point="mid-left:48,6" static="NO">{{ date.minute }}</pdf:text>
+					<pdf:text point="mid-left:52,6">分</pdf:text>
+                </pdf:td>
+				<pdf:td width="13">地点</pdf:td>
+				<pdf:td width="81" textAlignment="left">
+                    
+                    <pdf:text point="mid-left:18,6">高速</pdf:text>
+                    
+					<pdf:text point="mid-left:45,6">方向K</pdf:text>
+                    
+					<pdf:text point="mid-left:65,6">+</pdf:text>
+                    
+					<pdf:text point="mid-left:78,6">m</pdf:text>
+                    
+                    <pdf:text point="mid-left:2,6" static="NO">{{ highSpeed }}</pdf:text>
+                    
+                    <pdf:text point="mid-left:28,6" static="NO">{{ direction }}</pdf:text>
+                    
+                    <pdf:text point="mid-left:56,6" static="NO">{{ stake1 }}</pdf:text>
+                    
+                    <pdf:text point="mid-left:70,6" static="NO">{{ stake2 }}</pdf:text>
+                </pdf:td>
+                
+                <pdf:td width="13">车辆</pdf:td>
+				<pdf:td width="39" static="NO" textAlignment="left">
+                    <pdf:text point="mid-left:10,6" static="NO">{{ automobile_number }}</pdf:text>
+                </pdf:td>
+                
+                <pdf:td width="13">天气</pdf:td>
+				<pdf:td width="13" static="NO" textAlignment="left">
+                    <pdf:text point="mid-left:3,5" static="NO">{{ weater }}</pdf:text>
+                </pdf:td>
+                
+				<pdf:td width="13">路面\n性质</pdf:td>
+				<pdf:td width="22" static="NO" fontSize="9" textAlignment="left">
+                    <pdf:text point="mid-left:2,6" static="NO">{{ eventReason }}</pdf:text>
+                </pdf:td>
+                
+                
+			</pdf:tr>
+			<pdf:tr height="132">
+				<pdf:td width="268">
+					<pdf:image rect="{0,5},{268,120}" url="{{ imagePath }}" static="NO"/>
+					<pdf:grid rect="{0,0},{268,120}" row="26" column="62" alpha="0.3" />
+				</pdf:td>
+			</pdf:tr>
+			<pdf:tr height="32">
+				<pdf:td width="273">
+					<pdf:text point="2,-4">说明：</pdf:text>
+					<pdf:paragraph rect="{2,-3},{264,30}" lineHeight="6" indent="head:13" static="NO">{{ comment }}</pdf:paragraph>
+				</pdf:td>
+			</pdf:tr>
+		</pdf:table>
+        
+        <pdf:text point="17,192">路政勘查员：</pdf:text>
+        
+        <!--
+         <pdf:text point="112,187" static="NO">{{ inquestman  }}</pdf:text>
+         -->
+        
+		<pdf:text point="85,192">绘图员：</pdf:text>
+        
+        <!--
+         <pdf:text point="53,187" static="NO">{{ draftsman }}</pdf:text>
+         -->
+        <pdf:text point="150,192">当事人或见证人签字：</pdf:text>
+        
+	</pdf:content>
+</pdf:template>

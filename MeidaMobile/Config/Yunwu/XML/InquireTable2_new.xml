@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InquireTable2>
+    <Paper size = "A4" width = "595" height = "842">
+        <Margin top= "0" left = "0" right = "65" bottom = "65" />
+        <orientation isPortrait="YES" />
+	</Paper>
+    <StaticTable>
+    	<Lines>
+    		<defaultLineWidth>0.2</defaultLineWidth>
+    		<line x1="26.5" y1="53.5" x2="188" y2="53.5" />
+            <line x1="26.5" y1="64.3" x2="188" y2="64.3" />
+            <line x1="26.5" y1="75.2" x2="188" y2="75.2" />
+            <line x1="26.5" y1="86" x2="188" y2="86" />
+            <line x1="26.5" y1="96.8" x2="188" y2="96.8" />
+            <line x1="26.5" y1="107.7" x2="188" y2="107.7" />
+            <line x1="26.5" y1="118.5" x2="188" y2="118.5" />
+            <line x1="26.5" y1="129.3" x2="188" y2="129.3" />
+            <line x1="26.5" y1="140.2" x2="188" y2="140.2" />
+            <line x1="26.5" y1="151" x2="188" y2="151" />
+            <line x1="26.5" y1="161.8" x2="188" y2="161.8" />
+            <line x1="26.5" y1="172.7" x2="188" y2="172.7" />
+            <line x1="26.5" y1="183.5" x2="188" y2="183.5" />
+            <line x1="26.5" y1="194.3" x2="188" y2="194.3" />
+            <line x1="26.5" y1="205.2" x2="188" y2="205.2" />
+            <line x1="26.5" y1="216" x2="188" y2="216" />
+            <line x1="26.5" y1="226.8" x2="188" y2="226.8" />
+            <line x1="26.5" y1="237.7" x2="188" y2="237.7" />
+            <line x1="26.5" y1="248.5" x2="188" y2="248.5" />
+            <line x1="26.5" y1="259.3" x2="188" y2="259.3" />
+            <line x1="26.5" y1="270.2" x2="188" y2="270.2" />
+            
+            <line x1="26.5" y1="53.5" x2="26.5" y2="270.2" />
+            <line x1="188" y1="53.5" x2="188" y2="270.2" />
+    	</Lines>
+    	<Texts>
+    		<defaultFontSize>19</defaultFontSize>
+    		<Text>
+    			<text>公路赔（补）偿案件询问笔录</text>
+    			<fontSize>15</fontSize>
+    			<origin x="72" y="29" />
+    			<size width="200" height="6" />
+    		</Text>
+    		<Text>
+    			<text>（接上页）</text>
+                <fontSize>14</fontSize>
+    			<origin x="95" y="39.5" />
+    			<size width="200" height="6" />
+    		</Text>
+    		<Text>
+    			<text>被询问人（签字并按手印）：</text>
+    			<origin x="29" y="255.5" />
+    			<size width="200" height="6" />
+    		</Text>
+    		<Text>
+    			<text>共   页   第  页</text>
+    			<origin x="133" y="264.3" />
+    			<size width="200" height="6" />
+    		</Text>
+    	</Texts>
+    </StaticTable>
+    <DataTable>
+    	<DefaultFontSize>19</DefaultFontSize>
+    	<UITextView>
+    		<origin x="32" y="60.5" />
+    		<size width="150" height="125" />
+    		<fontSize>11</fontSize>
+    		<lineHeight>29</lineHeight>
+    		<content>
+    			<data>
+    				<attributeName>inquiry_note</attributeName>
+    				<entityName></entityName>
+    			</data>
+    		</content>
+    	</UITextView>
+    	<UITextField>
+    		<origin x="110" y="262.3" />
+    		<size width="60" height="6" />
+    		<fontSize>12</fontSize>
+    		<alignment>center</alignment>
+    		<content>
+    			<data>
+    				<attributeName>pageCount</attributeName>
+    				<entityName>PageNumberInfo</entityName>
+    			</data>
+    		</content>
+    	</UITextField>
+    	<UITextField>
+    		<origin x="131" y="262.3" />
+    		<size width="60" height="6" />
+    		<fontSize>12</fontSize>
+    		<alignment>center</alignment>
+    		<content>
+    			<data>
+    				<attributeName>pageNumber</attributeName>
+    				<entityName>PageNumberInfo</entityName>
+    			</data>
+    		</content>
+    	</UITextField>
+    </DataTable>
+</InquireTable2>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Server Settings</key>
+	<dict>
+		<key>server place</key>
+		<string>梅大</string>
+		<key>server address</key>
+		<string>http://219.131.172.162:81/md/</string>
+		<key>file address</key>
+		<string>http://219.131.172.162:81/md/</string>
+	</dict>
+	<key>FileToTableMapping</key>
+	<dict>
+		<key>解除责令车辆停驶通知书</key>
+		<string>CancelParkingNodeTable</string>
+		<key>KanYanJianChaBiLu</key>
+		<string>KanYanJianChaBiLu.xml</string>
+		<key>JieChuZeLingCheLiangTingShiTongZhiShu</key>
+		<string>JieChuZeLingCheLiangTingShiTongZhiShu.xml</string>
+		<key>SheXianWeiFaXingWeiGaoZhiShu</key>
+		<string>SheXianWeiFaXingWeiGaoZhiShu.xml</string>
+		<key>ZeLingGaizhengTongZhi</key>
+		<string>ZeLingGaizhengTongZhi.xml</string>
+		<key>ZeLingGaiZhengTongZhiShu</key>
+		<string>ZeLingGaiZhengTongZhiShu.xml</string>
+		<key>ZeLingCheLiangTingShiTongZhiShu</key>
+		<string>ZeLingCheLiangTingShiTongZhiShu.xml</string>
+		<key>LuZhengAnJianXianChangKanYanTu</key>
+		<string>LuZhengAnJianXianChangKanYanTu.xml</string>
+		<key>GongLuPeiBuChangTongZhiShu</key>
+		<string>GongLuPeiBuChangTongZhiShu.xml</string>
+		<key>GongLuPeiBuChangAnJianGuanLiWenShuSongDaHuiZheng</key>
+		<string>GongLuPeiBuChangAnJianGuanLiWenShuSongDaHuiZheng.xml</string>
+		<key>GongLuPeiBuChangAnJianXunWenBiLuExtra</key>
+		<string>GongLuPeiBuChangAnJianXunWenBiLuExtra.xml</string>
+		<key>GongLuPeiBuChangAnJianXunWenBiLu</key>
+		<string>GongLuPeiBuChangAnJianXunWenBiLu.xml</string>
+		<key>GongLuPeiBuChangAnJianKanYanJianChaBiLu</key>
+		<string>GongLuPeiBuChangAnJianKanYanJianChaBiLu.xml</string>
+		<key>GongLuPeiBuChangQingDan</key>
+		<string>GongLuPeiBuChangQingDan.xml</string>
+		<key>责令车辆停驶通知书</key>
+		<string>ParkingNodeTable</string>
+		<key>勘验检查笔录</key>
+		<string>ProveInfoTable</string>
+		<key>询问笔录</key>
+		<string>InquireTable</string>
+		<key>赔（补）偿通知书</key>
+		<string>AtonementNoticeTable</string>
+		<key>现场勘验图</key>
+		<string>CaseMapTable</string>
+		<key>送达回证</key>
+		<string>ServiceReceiptTable</string>
+		<key>赔（补）偿清单</key>
+		<string>CaseCountTable</string>
+		<key>施工整改通知书</key>
+		<string>ConstructionTable</string>
+	</dict>
+	<key>Projectname</key>
+	<dict>
+		<key>projectname</key>
+		<string>meida</string>
+		<key>payname</key>
+		<string>梅大高赔字</string>
+		<key>cityname</key>
+		<string>梅大</string>
+	</dict>
+</dict>
+</plist>

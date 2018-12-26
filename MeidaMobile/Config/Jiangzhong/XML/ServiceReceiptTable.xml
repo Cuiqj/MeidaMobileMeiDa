@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CaseServiceReceiptTable>
+    <!--所有尺寸单位以mm计算-->
+    <Paper size="A4" width="595" height="842">
+        <Margin top="0" left="0" right="2" bottom="4" />
+        <orientation isPortrait="YES" />
+    </Paper>
+    <StaticTable>
+        <Lines>
+            <defaultLineWidth>0.2</defaultLineWidth>
+            <!--上线-->
+            <line x1="20" y1="44" x2="194" y2="44" />
+            <!--下线-->
+            <line x1="20" y1="272" x2="194" y2="272" />
+            <!--左边框线-->
+            <line x1="20" y1="44" x2="20" y2="272" />
+            <!--右边框线-->
+            <line x1="194" y1="44" x2="194" y2="272" />
+            <!--案由上线-->
+            <line x1="20" y1="53" x2="194" y2="53" />
+            <!--送达单位上线-->
+            <line x1="20" y1="63" x2="194" y2="63" />
+            <!--送达地点上线-->
+            <line x1="20" y1="72" x2="194" y2="72" />
+            <!--送达文件上线-->
+            <line x1="20" y1="81" x2="194" y2="81" />
+            <!--横线1-->
+            <line x1="20" y1="90" x2="194" y2="90" />
+            <!--横线2-->
+            <line x1="20" y1="99" x2="194" y2="99" />
+            <!--横线3-->
+            <line x1="20" y1="108" x2="194" y2="108" />
+            <!--备注上线-->
+            <line x1="20" y1="116" x2="194" y2="116" />
+            <!--注上线-->
+            <line x1="20" y1="235" x2="194" y2="235" />
+            <!--竖线1-->
+            <line x1="77" y1="81" x2="77" y2="116" />
+            <!--竖线2-->
+            <line x1="116" y1="81" x2="116" y2="116" />
+            <!--竖线3-->
+            <line x1="154" y1="81" x2="154" y2="116" />
+            
+        </Lines>
+        <Texts>
+        	<defaultFontSize>19</defaultFontSize>
+        	<!--公路赔（补）偿案件管理文书送达回证-->
+            <Text>
+                <text>公路赔（补）偿案件管理文书送达回证</text>
+                <fontSize>22</fontSize>
+                <origin x="39" y="31" />
+                <size width="500" height="6" />
+            </Text>
+            <!--案号（-->
+            <Text>
+                <text>案号（</text>
+                <fontSize>18</fontSize>
+                <origin x="103" y="39.5" />
+                <size width="100" height="6" />
+            </Text>
+            <!--字第-->
+            <Text>
+                <text>）字第（</text>
+                <fontSize>18</fontSize>
+                <origin x="137" y="39.5" />
+                <size width="100" height="6" />
+            </Text>
+            <!--号-->
+            <Text>
+                <text>）号</text>
+                <fontSize>18</fontSize>
+                <origin x="172" y="39.5" />
+                <size width="100" height="6" />
+            </Text>
+            <!--受送达人： -->
+            <Text>
+            	<text>受送达人：</text>
+                <fontSize>18</fontSize>
+            	<origin x="21" y="48.5" />
+                <size width="100" height="6" />
+            </Text>
+            <!--案由： -->
+            <Text>
+            	<text>案由：</text>
+                <fontSize>18</fontSize>
+            	<origin x="21" y="58.5" />
+                <size width="100" height="6" />
+            </Text>
+            <!-- 送达单位-->
+            <Text>
+            	<text>送达单位：</text>
+                <fontSize>18</fontSize>
+            	<origin x="21" y="67.5" />
+                <size width="100" height="6" />
+            </Text>
+            <!--送达地点： -->
+            <Text>
+            	<text>送达地点：</text>
+                <fontSize>18</fontSize>
+            	<origin x="21" y="76.5" />
+                <size width="100" height="6" />
+            </Text>
+            <!-- 送达文件名称-->
+            <Text>
+            	<text>送达文件名称</text>
+            	<origin x="36" y="86" />
+                <size width="100" height="6" />
+            </Text>
+            <!-- 送达人-->
+            <Text>
+            	<text>送达人</text>
+            	<origin x="91" y="86" />
+                <size width="100" height="6" />
+            </Text>
+            <!--签收日期 -->
+            <Text>
+            	<text>签收日期</text>
+            	<origin x="127" y="86" />
+                <size width="100" height="6" />
+            </Text>
+            <!--收件人签章 -->
+            <Text>
+            	<text>收件人签章</text>
+            	<origin x="164" y="86" />
+                <size width="100" height="6" />
+            </Text>
+            <!--备注 -->
+            <Text>
+            	<text>备注：</text>
+                <fontSize>18</fontSize>
+            	<origin x="21" y="120" />
+                <size width="100" height="6" />
+            </Text>
+            <!--注： -->
+            <Text>
+            	<text>注：1、如送达人不在场的，可交其同住的成年家属，并在备注栏内写明与送达人关系；</text>
+            	<origin x="21" y="246" />
+                <size width="500" height="6" />
+            </Text>
+            <!-- 2、-->
+            <Text>
+            	<text>2、受送达人已指定代收人的，交代收人签收；</text>
+            	<origin x="21" y="251" />
+                <size width="500" height="6" />
+            </Text>
+            <!--3、 -->
+            <Text>
+            	<text>3、受送达人拒绝收的，应邀有关组织代表或其他人到场，在备注中拒事由及有关</text>
+            	<origin x="21" y="256" />
+                <size width="500" height="6" />
+            </Text>
+            <!-- -->
+            <Text>
+            	<text>情况，并将文书留置，视为已送达。</text>
+            	<origin x="21" y="261" />
+                <size width="500" height="6" />
+            </Text>
+        </Texts>
+    </StaticTable>
+    <DataTable>
+        <!--设置默认字体-->
+        <DefaultFontSize>19</DefaultFontSize>
+        <!--案号-->
+        <UITextField>
+            <origin x="125" y="38.5" />
+            <size width = "18" height = "6" />
+            <content>
+                <data>
+                    <!--字段名-->
+                    <attributeName>case_mark2</attributeName>
+                    <!--数据表名-->
+                    <entityName>CaseInfo</entityName>
+                </data>
+            </content>
+        </UITextField>
+        <!--第（）号-->
+        <UITextField>
+            <origin x="161.5" y="38.5" />
+            <size width = "12" height = "6" />
+            <content>
+                <data>
+                    <!--字段名-->
+                    <attributeName>full_case_mark3</attributeName>
+                    <!--数据表名-->
+                    <entityName>CaseInfo</entityName>
+                </data>
+            </content>
+        </UITextField>
+        <!--受送达人-->
+        <UITextField>
+            <origin x="53" y="46" />
+            <size width = "160" height = "6" />
+            <content>
+                <data>
+                    <!--字段名-->
+                    <attributeName>incepter_name</attributeName>
+                </data>
+            </content>
+        </UITextField>
+        <!--案由-->
+        <UITextField>
+            <origin x="40" y="56" />
+            <size width = "150" height = "6" />
+            <content>
+                <data>
+                    <!--字段名-->
+                    <attributeName>case_long_desc</attributeName>
+                    <!--数据表名-->
+                    <entityName>CaseProveInfo</entityName>
+                </data>
+            </content>
+        </UITextField>
+        <!--送达单位-->
+        <UITextField>
+            <origin x="52" y="64.5" />
+            <size width = "140" height = "6" />
+            <content>
+                <data>
+                    <!--字段名-->
+                    <attributeName>service_company</attributeName>
+                    <!--数据表名-->
+                    <entityName></entityName>
+                </data>
+            </content>
+        </UITextField>
+        <!--送达地点-->
+        <UITextField>
+            <origin x="52" y="74.5" />
+            <size width = "140" height = "6" />
+            <content>
+                <data>
+                    <!--字段名-->
+                    <attributeName>service_position</attributeName>
+                    <!--数据表名-->
+                    <entityName></entityName>
+                </data>
+            </content>
+        </UITextField>
+        <UITableView>
+            <content>
+                <data>
+                    <!--字段名-->
+                    <attributeName>file_list</attributeName>
+                </data>
+            </content>
+            <table>
+                <origin x="23" y="91" />
+                <row>
+                    <cell>
+                        <size width = "80" height = "8.8" />
+                        <data>
+                            <attributeName>service_file</attributeName>
+                        </data>
+                    </cell>
+                </row>
+            </table>
+        </UITableView>
+        <!--备注-->
+        <UITextView>
+            <fontSize>12</fontSize>
+            <origin x="23" y="126" />
+            <size width="172" height="200" />
+            <content>
+                <data>
+                    <attributeName>remark</attributeName>
+                    <entityName></entityName>
+                </data>
+            </content>
+        </UITextView>
+    </DataTable>
+</CaseServiceReceiptTable>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConstructionTable>
+    <Paper size = "A4" width = "595" height = "842">
+        <Margin top= "0" left = "0" right = "65" bottom = "65" />
+        <Orientation isPortrait="YES" />
+	</Paper>
+	<StaticTable>
+        <Lines>
+            <defaultLineWidth>0.2</defaultLineWidth>
+            <line x1="35" y1="33" x2="182" y2="33" />
+            
+            <line x1="35" y1="44" x2="117" y2="44" />
+            
+        </Lines>
+		<Texts>
+            <defaultFontSize>19</defaultFontSize>
+			<!--标题-->
+			<Text>
+				<text>广东省公路管理局中江路政大队</text>
+                <!--字体大小，可选配置，在UILayouts内同-->
+                <fontSize>16</fontSize>
+                <!--origin为左上点计算边距后的相对位置，UILayouts里意义同-->
+                <origin x="70" y="8" />
+                <size width="500" height="6" />
+			</Text>
+            <Text>
+				<text>施工整改通知书（回执）</text>
+                <!--字体大小，可选配置，在UILayouts内同-->
+                <fontSize>16</fontSize>
+                <!--origin为左上点计算边距后的相对位置，UILayouts里意义同-->
+                <origin x="82" y="18" />
+                <size width="500" height="6" />
+			</Text>
+            <Text>
+				<text>NO：</text>
+                <!--字体大小，可选配置，在UILayouts内同-->
+                <fontSize>16</fontSize>
+                <!--origin为左上点计算边距后的相对位置，UILayouts里意义同-->
+                <origin x="173" y="18" />
+                <size width="70" height="6" />
+			</Text>
+			<!--：-->
+            <Text>
+                <text>：</text>
+                <origin x="117" y="42" />
+                <size width="36" height="6" />
+            </Text>
+            <!--关于-->
+            <Text>
+                <text>关于你对于</text>
+                <origin x="50" y="52" />
+                <size width="100" height="6" />
+            </Text>
+            <!--年-->
+            <Text>
+                <text>年</text>
+                <origin x="82" y="52" />
+                <size width="52" height="6" />
+            </Text>
+            <!--月-->
+            <Text>
+                <text>月</text>
+                <origin x="91" y="52" />
+                <size width="24" height="6" />
+            </Text>
+            <!--日-->
+            <Text>
+                <text>日</text>
+                <origin x="99" y="52" />
+                <size width="24" height="6" />
+            </Text>
+            <!--时-->
+            <Text>
+                <text>时下发的施工整改通知书NO：</text>
+                <origin x="109" y="52" />
+                <size width="300" height="6" />
+            </Text>
+            <!--，-->
+            <Text>
+                <text>，</text>
+                <origin x="179" y="52" />
+                <size width="24" height="6" />
+            </Text>
+            <!--我单位-->
+            <Text>
+                <text>我单位已就有问题依规定整改，现将整改情况汇报如下：</text>
+                <origin x="35" y="60" />
+                <size width="300" height="6" />
+            </Text>
+            <!--施工单位-->
+            <Text>
+                <text>施工单位（盖章）</text>
+                <origin x="137" y="121" />
+                <size width="100" height="6" />
+            </Text>
+            <!---->
+            <Text>
+                <text>年</text>
+                <origin x="145" y="126" />
+                <size width="30" height="6" />
+                
+            </Text>
+            <!---->
+            <Text>
+                <text>月</text>
+                <origin x="156" y="126" />
+                <size width="24" height="6" />
+                
+            </Text>
+            <!---->
+            <Text>
+                <text>日</text>
+                <origin x="166" y="126" />
+                <size width="30" height="6"/>
+                
+            </Text>
+		</Texts>
+	</StaticTable>
+    <DataTable>
+        <!--NO-->
+        <UITextField>
+            <origin x="182" y="16" />
+            <size width="20" height = "6"/>
+            <content>
+                <data>
+                    <attributeName>no</attributeName>
+                    <entityName></entityName>
+                </data>
+            </content>
+        </UITextField>
+        <!--发送单位-->
+        <UITextField>
+            <origin x="36" y="27" />
+            <size width="100" height = "6"/>
+            <content>
+                <data>
+                    <attributeName>sendname</attributeName>
+                    <entityName></entityName>
+                </data>
+            </content>
+        </UITextField>
+        <!--年-->
+        <UITextField>
+            <origin x="72" y="50" />
+            <size width="30" height = "6"/>
+            <content>
+                <data>
+                    <attributeName>sendate</attributeName>
+                    <mode>yyyy</mode>
+                </data>
+            </content>
+        </UITextField>
+        <!--月-->
+        <UITextField>
+            <origin x="87" y="50" />
+            <size width="90" height = "6"/>
+            <content>
+                <data>
+                    <attributeName>sendate</attributeName>
+                    <mode>MM</mode>
+                </data>
+            </content>
+        </UITextField>
+        <!--日-->
+        <UITextField>
+            <origin x="95" y="50" />
+            <size width="140" height = "6"/>
+            <content>
+                <data>
+                    <attributeName>sendate</attributeName>
+                    <mode>dd</mode>
+                </data>
+            </content>
+        </UITextField>
+        <!--时-->
+        <UITextField>
+            <origin x="104" y="50" />
+            <size width="70" height = "6"/>
+            <content>
+                <data>
+                    <attributeName>sendate</attributeName>
+                    <mode>HH</mode>
+                </data>
+            </content>
+        </UITextField>
+        <!--通知书NO-->
+        <UITextField>
+            <origin x="162" y="50" />
+            <size width="103" height = "6"/>
+            <content>
+                <data>
+                    <attributeName>sendNO</attributeName>
+                    <entityName></entityName>
+                </data>
+            </content>
+        </UITextField>
+        <!--汇报如下-->
+        <UITextView>
+            <origin x="36" y="65" />
+            <size width="152" height="150" />
+            <content>
+                <data>
+                    <attributeName>sendcontent</attributeName>
+                    <entityName></entityName>
+                </data>
+            </content>
+        </UITextView>
+
+    </DataTable>
+</ConstructionTable>
