@@ -49,5 +49,5 @@
 #define SCALEFACTOR 1.0017f
 
 
-#define VERSION_NAME @"梅大路政"
-#define VERSION_TIME @"2018年12月20日"
+#define VERSION_NAME @"天汕路政"
+#define VERSION_TIME @"2019年01月18日"

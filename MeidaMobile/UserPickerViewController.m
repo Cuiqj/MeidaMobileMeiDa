@@ -17,7 +17,13 @@
 
 
 - (void)viewWillAppear:(BOOL)animated{
-    self.data=[UserInfo allUserInfo];
+    NSMutableArray * UserData = [[UserInfo allUserInfo] mutableCopy];
+    NSString * usernametry = [[UserData objectAtIndex:0] valueForKey:@"username"];
+    if ([usernametry containsString:@"系统管理"] || [usernametry containsString:@"a"] || [usernametry containsString:@"A"]) {
+        [UserData removeObject:UserData[0]];
+    }
+    self.data = [NSArray arrayWithArray:UserData];
+    [super viewWillAppear:animated];
 }
 
 - (void)viewDidUnload

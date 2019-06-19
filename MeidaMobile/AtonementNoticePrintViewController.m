@@ -54,7 +54,7 @@
 {
     [super setCaseID:self.caseID];
     [self LoadPaperSettings:@"AtonementNoticeTable"];
-    self.view.frame = CGRectMake(0, 0, self.view.frame.size.width,1300);
+    self.view.frame = CGRectMake(0, 0, self.view.frame.size.width-200,1300);
     
     /*modify by lxm 不能实时更新*/
     if (![self.caseID isEmpty]) {
