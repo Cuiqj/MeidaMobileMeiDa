@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MeidaMobile/AtonementNoticePrintViewController.m"
-            timestampString = "576990137.017699"
+            timestampString = "583226962.91681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "395"
-            endingLineNumber = "395"
+            startingLineNumber = "398"
+            endingLineNumber = "398"
             landmarkName = "-dataForPDFTemplate"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MeidaMobile/AtonementNoticePrintViewController.m"
-            timestampString = "576990137.017799"
+            timestampString = "583226962.916894"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "365"
-            endingLineNumber = "365"
+            startingLineNumber = "368"
+            endingLineNumber = "368"
             landmarkName = "-dataForPDFTemplate"
             landmarkType = "7">
          </BreakpointContent>
@@ -64,22 +64,6 @@
             startingLineNumber = "145"
             endingLineNumber = "145"
             landmarkName = "-alertView"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MeidaMobile/AtonementNoticePrintViewController.m"
-            timestampString = "576990137.017887"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
-            landmarkName = "+generateDefaultsForNotice:caseId:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

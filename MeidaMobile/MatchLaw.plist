@@ -10,55 +10,54 @@
 			<string>损坏公路路产</string>
 			<key>payLaw</key>
 			<array>
-				<string>广东省《损坏公路路产赔偿标准》（粤交路〔1998〕38号</string>
-				<string>粤交路〔1999〕263号文）</string>
+				<string>《关于重新制定（损坏公路路产赔偿标准）的通知》(粤交路〔1998〕38号）</string>
+				<string>《关于增补公路路产赔偿项目标准的通知》(粤交路〔1999〕263号）</string>
 			</array>
 			<key>matchLaw</key>
 			<array>
-				<string>《中华人民共和国公路法》第八十五条</string>
+				<string>《中华人民共和国公路法》第八十五条第一款</string>
+				<string>《公路安全保护条例》第七十一条</string>
 				<string>《广东省公路条例》第二十三条</string>
 			</array>
 			<key>breakLaw</key>
-			<array>
-				<string>《中华人民共和国公路法》第五十三条</string>
-			</array>
+			<array/>
 		</dict>
 		<key>971</key>
-		<dict>
-			<key>content</key>
-			<string>污染公路路产</string>
-			<key>payLaw</key>
-			<array>
-				<string>广东省《损坏公路路产赔偿标准》（粤交路〔1998〕38号</string>
-				<string>粤交路〔1999〕263号文）</string>
-			</array>
-			<key>matchLaw</key>
-			<array>
-				<string>《公路法》第八十五条第一款</string>
-				<string>《广东省公路条例》第二十三条第一款</string>
-			</array>
-			<key>breakLaw</key>
-			<array>
-				<string>《公路法》第四十六条</string>
-			</array>
-		</dict>
-		<key>973</key>
 		<dict>
 			<key>content</key>
 			<string>损坏、污染公路路产</string>
 			<key>payLaw</key>
 			<array>
-				<string>广东省《损坏公路路产赔偿标准》（粤交路〔1998〕38号</string>
-				<string>粤交路〔1999〕263号文）</string>
+				<string>《关于重新制定（损坏公路路产赔偿标准）的通知》(粤交路〔1998〕38号）</string>
+				<string>《关于增补公路路产赔偿项目标准的通知》(粤交路〔1999〕263号）</string>
 			</array>
 			<key>matchLaw</key>
 			<array>
-				<string>《中华人民共和国公路法》第八十五条</string>
-				<string>广东省公路条例》第二十三条</string>
+				<string>《中华人民共和国公路法》第四十六条</string>
+				<string>《中华人民共和国公路法》第八十五条第一款</string>
+				<string>《公路安全保护条例》第七十一条</string>
+				<string>《广东省公路条例》第二十三条</string>
+			</array>
+			<key>breakLaw</key>
+			<array/>
+		</dict>
+		<key>973</key>
+		<dict>
+			<key>content</key>
+			<string>污染公路路产</string>
+			<key>payLaw</key>
+			<array>
+				<string>《关于重新制定（损坏公路路产赔偿标准）的通知》(粤交路〔1998〕38号）</string>
+				<string>《关于增补公路路产赔偿项目标准的通知》(粤交路〔1999〕263号）</string>
+			</array>
+			<key>matchLaw</key>
+			<array>
+				<string>《中华人民共和国公路法》第八十五条第一款</string>
+				<string>《广东省公路条例》第二十三条</string>
 			</array>
 			<key>breakLaw</key>
 			<array>
-				<string>《中华人民共和国公路法》第四十六条和第五十三条</string>
+				<string>《中华人民共和国公路法》第四十六条</string>
 			</array>
 		</dict>
 	</dict>

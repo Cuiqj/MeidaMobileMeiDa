@@ -430,15 +430,13 @@
                 breakStr = [(NSArray *)[matchInfo objectForKey:@"breakLaw"] componentsJoinedByString:@"和"];
             }
             if ([matchInfo objectForKey:@"matchLaw"]) {
-                matchStr = [(NSArray *)[matchInfo objectForKey:@"matchLaw"] componentsJoinedByString:@"和"];
+                matchStr = [(NSArray *)[matchInfo objectForKey:@"matchLaw"] componentsJoinedByString:@"､"];
             }
             if ([matchInfo objectForKey:@"payLaw"]) {
-                payStr = [(NSArray *)[matchInfo objectForKey:@"payLaw"] componentsJoinedByString:@"、"];
+                payStr = [(NSArray *)[matchInfo objectForKey:@"payLaw"] componentsJoinedByString:@"和"];
             }
         }
-        
-        payReason = [NSString stringWithFormat:@"你的行为违反了%@，按照%@规定，并按照%@的规定，你应对此行为承担民事责任，赔偿路产损失，你有无异议？",breakStr, matchStr, payStr];
-        
+        payReason = [NSString stringWithFormat:@"你的行为违反了%@､%@规定，并按照%@的规定，你应对此行为承担民事责任，赔偿路产损失，你有无异议？",breakStr, matchStr, payStr];
     }
     return payReason;
 }

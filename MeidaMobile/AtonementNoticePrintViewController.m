@@ -201,16 +201,19 @@
                 breakStr = [(NSArray *)[matchInfo objectForKey:@"breakLaw"] componentsJoinedByString:@"和"];
             }
             if ([matchInfo objectForKey:@"matchLaw"]) {
-                matchStr = [(NSArray *)[matchInfo objectForKey:@"matchLaw"] componentsJoinedByString:@"和"];
+                matchStr = [(NSArray *)[matchInfo objectForKey:@"matchLaw"] componentsJoinedByString:@"､"];
             }
             if ([matchInfo objectForKey:@"payLaw"]) {
-                payStr = [(NSArray *)[matchInfo objectForKey:@"payLaw"] componentsJoinedByString:@"、"];
+                payStr = [(NSArray *)[matchInfo objectForKey:@"payLaw"] componentsJoinedByString:@"和"];
             }
         }
         
-        payReason = [NSString stringWithFormat:@"%@%@的违法事实清楚，其行为违反了%@，按照%@规定，并依照%@的规定，当事人应当承担民事责任，赔偿路产损失。", citizen.party, proveInfo.case_short_desc, breakStr, matchStr, payStr];
-        
-        payReason = [NSString stringWithFormat:@"%@规定，根据%@、%@",  breakStr, matchStr, payStr];
+//        payReason = [NSString stringWithFormat:@"%@%@的违法事实清楚，其行为违反了%@，按照%@规定，并依照%@的规定，当事人应当承担民事责任，赔偿路产损失。", citizen.party, proveInfo.case_short_desc, breakStr, matchStr, payStr];
+        if (breakStr.length<1) {
+            payReason = [NSString stringWithFormat:@"%@，并按照%@",matchStr, payStr];
+        }else{
+            payReason = [NSString stringWithFormat:@"%@规定，根据%@，并按照%@",breakStr, matchStr, payStr];
+        }
     }
     notice.pay_reason = payReason;
     NSArray *deformations = [CaseDeformation deformationsForCase:caseID forCitizen:notice.citizen_name];
@@ -534,4 +537,11 @@
 -(void)setCaseText:(NSString *)aText{
     self.textBankName.text = aText;
 }
+- (void)deleteCurrentDoc{
+    NSManagedObjectContext * context = [[AppDelegate App] managedObjectContext];
+    [context deleteObject:self.notice];
+    [[AppDelegate App] saveContext];
+}
+
+
 @end
