@@ -536,7 +536,8 @@
     if (found.location != NSNotFound) {
         organizationName = orgname;
     }
-    caseDescString=[caseDescString stringByAppendingFormat:@"经与当事人现场勘查，损坏路产详细见《%@损坏公路设施索赔清单》",organizationName];
+//    caseDescString=[caseDescString stringByAppendingFormat:@"经与当事人现场勘查，损坏路产详见《%@损坏公路设施索赔清单》",organizationName];
+    caseDescString=[caseDescString stringByAppendingFormat:@"经与当事人现场勘查，损坏路产详见《损坏公路设施索赔清单》"];
     return caseDescString;
 }
 

@@ -366,8 +366,8 @@
             agency = NSStringNilIsBad(notice.organization_info);
             
             caseDescription = NSStringNilIsBad(notice.case_desc);
-            NSArray * temp=[notice.case_desc componentsSeparatedByString:@"分"];
-            caseDescription= [temp objectAtIndex:1];
+//            NSArray * temp=[notice.case_desc componentsSeparatedByString:@"分"];
+//            caseDescription= [temp objectAtIndex:1];
             caseEvidence = NSStringNilIsBad(notice.witness);
             payReason = NSStringNilIsBad(notice.pay_reason);
             
@@ -381,6 +381,7 @@
             Citizen *citizen = [Citizen citizenForCitizenName:notice.citizen_name nexus:@"当事人" case:self.caseID];
             if (citizen) {
                 partyName = NSStringNilIsBad(citizen.party);
+                caseDescription= [NSString stringWithFormat:@"%@于%@",citizen.party,caseDescription];
                 partyAddress = NSStringNilIsBad(citizen.address);
                 
                 NSArray *payments = [CaseDeformation deformationsForCase:self.caseID forCitizen:citizen.automobile_number];

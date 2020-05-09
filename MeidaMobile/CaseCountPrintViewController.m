@@ -309,6 +309,7 @@ static NSString * const xmlName = @"CaseCountTable";
     Citizen  *citizen = [Citizen citizenForCitizenName:nil nexus:@"当事人" case:self.caseID];
     if (citizen) {
         citizenData = @{
+                        @"org_name":NSStringNilIsBad(citizen.org_name),
                         @"name":NSStringNilIsBad(citizen.party),
                         @"car_model":NSStringNilIsBad(citizen.automobile_pattern),
                         @"car_number":NSStringNilIsBad(citizen.automobile_number),

@@ -5,90 +5,70 @@
     <pdf:content>
         <pdf:text point="75,50" fontName="SimHei" fontSize="17">公路赔（补）偿通知书</pdf:text>
         
-        <pdf:text point="65,61.5">（</pdf:text>
-        <pdf:text point="69,61.5" static="NO">{{ caseMark2 }}</pdf:text>
-        <pdf:text point="79,61.5">）年</pdf:text>
-        <pdf:text point="89.5,61.5" static="NO">{{ casePrefix }}</pdf:text>
-        <pdf:text point="106,61.5">交赔字第</pdf:text>
-        <pdf:text point="128,61.5" maxWidth="20" static="NO">{{ caseMark3 }}</pdf:text>
-        <pdf:text point="138,61.5">号</pdf:text>
+        <pdf:text point="65,62.5">（</pdf:text>
+        <pdf:line fromPoint="69.5,66.5" toPoint="83,66.5" lineWidth="0.5"/>
+        <pdf:text point="71,62.5" static="NO">{{ caseMark2 }}</pdf:text>
+        <pdf:text point="83.3,62.3">）年</pdf:text>
+        <pdf:line fromPoint="95,66.5" toPoint="110,66.5" lineWidth="0.5"/>
+        <pdf:text point="95,62.2" static="NO">{{ casePrefix }}</pdf:text>
+        <pdf:text point="110,62.5">交赔字第</pdf:text>
+        <pdf:line fromPoint="130,66.5" toPoint="142,66.5" lineWidth="0.5"/>
+        <pdf:text point="130,62.2" maxWidth="12" static="NO">{{ caseMark3 }}</pdf:text>
+        <pdf:text point="142,62.5">号</pdf:text>
+        <pdf:line fromPoint="21,80.5" toPoint="182,80.5" lineWidth="0.8"/>
+        <pdf:text point="23,91.5">当  事  人:</pdf:text>
+        <pdf:line fromPoint="54,96" toPoint="95,96" lineWidth="0.5"/>
+        <pdf:text point="55,92" static="NO" fontSize="10">{{ partyName }}</pdf:text>
+        <pdf:text point="23,103">当事人地址:</pdf:text>
+        <pdf:line fromPoint="54,108" toPoint="120,108" lineWidth="0.5"/>
+        <pdf:text point="55,104" maxWidth="90" static="NO" fontSize="10">{{ partyAddress }}</pdf:text>
         
-        <pdf:line fromPoint="22,78" toPoint="193,78" lineWidth="0.8"/>
-        
-        <pdf:text point="23,83">当  事  人:</pdf:text>
-        <pdf:line fromPoint="54,88" toPoint="95,88" lineWidth="0.5"/>
-        <pdf:text point="55,84" static="NO" fontSize="10">{{ partyName }}</pdf:text>
-        
-        <pdf:text point="23,93">当事人地址:</pdf:text>
-        <pdf:line fromPoint="54,98" toPoint="160,98" lineWidth="0.5"/>
-        <pdf:text point="55,94" maxWidth="90" static="NO" fontSize="10">{{ partyAddress }}</pdf:text>
-        
-        <pdf:text point="34,103">当事人</pdf:text>
-        <pdf:line fromPoint="50,108" toPoint="98,108" lineWidth="0.5"/>
-        <pdf:paragraph rect="{51,100},{43,57}" indent="head:0" lineHeight="4" static="NO" fontSize="10">{{ caseReason }}</pdf:text>
-        <pdf:text point="98.5,103">一案，经</pdf:text>
-        <pdf:line fromPoint="117,108" toPoint="150,108" lineWidth="0.5"/>
-        <pdf:text point="117,101.5" maxWidth="42" static="NO" fontSize="10">{{ agencyCity }}</pdf:text>
-        <pdf:text point="117,105" maxWidth="36" static="NO" fontSize="10">{{ agency }}</pdf:text>
-        <pdf:text point="152,103">依法调查核实:</pdf:text>
-        
-        
-        <pdf:text point="34,115">当事人</pdf:text>
-        <pdf:line fromPoint="48,119.5" toPoint="75,119.5" lineWidth="0.5"/>
-        <pdf:text point="50,115.5" static="NO" fontSize="10">{{ partyName }}</pdf:text>
-        <pdf:text point="75,115">于</pdf:text>
-        <pdf:line fromPoint="81,119.5" toPoint="91,119.5" lineWidth="0.5"/>
-        <pdf:text point="82,115.5" static="NO" fontSize="10">{{year}}</pdf:text>
-        <pdf:text point="93,115">年</pdf:text>
-        <pdf:line fromPoint="97.5,119.5" toPoint="105,119.5" lineWidth="0.5"/>
-        <pdf:text point="100,115.5" static="NO" fontSize="10">{{month}}</pdf:text>
-        <pdf:text point="106,115">月</pdf:text>
-        <pdf:line fromPoint="111,119.5" toPoint="119,119.5" lineWidth="0.5"/>
-        <pdf:text point="114,115.5" static="NO" fontSize="10">{{day}}</pdf:text>
-        <pdf:text point="120,115">日</pdf:text>
-        <pdf:line fromPoint="125,119.5" toPoint="188,119.5" lineWidth="0.5"/>
-        <pdf:line fromPoint="23,130" toPoint="188,130" lineWidth="0.5"/>
-        <pdf:line fromPoint="23,140" toPoint="188,140" lineWidth="0.5"/>
-        <pdf:paragraph rect="{22,112.5},{173,32}" indent="head:104" lineHeight="10" static="NO" fontSize="10">{{ caseDescription }}</pdf:paragraph>
-        
-        
-        <pdf:text point="34,146">上述事实，由</pdf:text>
-        <pdf:line fromPoint="64,150" toPoint="181,150" lineWidth="0.5"/>
-        <pdf:text point="181.5,146">予</pdf:text>
-        <pdf:text point="70,146" static="NO" fontSize="10">{{ caseEvidence }}</pdf:text>
-        <pdf:text point="23,156">以佐证。本单位认为，当事人损坏路产的事实清楚，应依法承担民事责任，</pdf:text>
-        <pdf:text point="23,167">赔偿路产损失。依</pdf:text>
-        <pdf:line fromPoint="62,172" toPoint="187,172" lineWidth="0.8"/>
-        <pdf:line fromPoint="23,182" toPoint="187,182" lineWidth="0.8"/>
-        <pdf:line fromPoint="23,192" toPoint="182,192" lineWidth="0.8"/>
-        <pdf:text point="182.5,188">之</pdf:text>
-        <pdf:paragraph rect="{23,164},{165,32}" indent="head:40" lineHeight="9.8"  static="NO" fontSize="9">{{ payReason1 }}</pdf:paragraph>
+        <pdf:text point="34,114.5">当事人</pdf:text>
+        <pdf:line fromPoint="48.5,119" toPoint="95,119" lineWidth="0.5"/>
+        <pdf:paragraph rect="{48.5,112.5},{46.5,9}" indent="head:0" lineHeight="3.5" static="NO" fontSize="10">{{ caseReason }}</pdf:text>
+        <pdf:text point="98,114.5">一案，经</pdf:text>
+        <pdf:line fromPoint="118,119" toPoint="151,119" lineWidth="0.5"/>
+        <pdf:text point="117.5,113" maxWidth="33.5" static="NO" fontSize="10">{{ agencyCity }}</pdf:text>
+        <pdf:text point="117.5,116.5" maxWidth="33.5" static="NO" fontSize="10">{{ agency }}</pdf:text>
+        <pdf:text point="152,114.5">依法调查核实:</pdf:text>
+        <pdf:text point="34,125">当事人</pdf:text>
+        <pdf:line fromPoint="48.5,130" toPoint="185,130" lineWidth="0.5"/>
+        <pdf:line fromPoint="23,140.5" toPoint="187,140.5" lineWidth="0.5"/>
+        <pdf:line fromPoint="23,151" toPoint="162,151" lineWidth="0.5"/>
+        <pdf:paragraph rect="{23,122.5},{164,32}" indent="head:26.5" lineHeight="10" static="NO" fontSize="10">{{ caseDescription }}</pdf:paragraph>
+        <pdf:text point="34,156.5">上述事实，由</pdf:text>
+        <pdf:line fromPoint="64.5,160.5" toPoint="182,160.5" lineWidth="0.5"/>
+        <pdf:text point="182.5,156.5">予</pdf:text>
+        <pdf:text point="70,156.5" static="NO" fontSize="10">{{ caseEvidence }}</pdf:text>
+        <pdf:text point="23,167">以佐证。本单位认为，当事人损坏路产的事实清楚，应依法承担民事责任，</pdf:text>
+        <pdf:text point="23,178">赔偿路产损失。依</pdf:text>
+        <pdf:line fromPoint="63,182.5" toPoint="187,182.5" lineWidth="0.8"/>
+        <pdf:line fromPoint="23,193" toPoint="182,193" lineWidth="0.8"/>
+        <pdf:text point="182.5,189">之</pdf:text>
+        <pdf:paragraph rect="{23,177.5},{165,18}" indent="head:41.5" lineHeight="5"  static="NO" fontSize="9">{{ payReason1 }}</pdf:paragraph>
 <!--        <pdf:paragraph rect="{23,171},{165,16}" lineHeight="8"  static="NO" fontSize="9">{{ payReason2 }}</pdf:paragraph>-->
-        <pdf:text point="23,197">规定，本单位依法做出如下公路赔（补）偿处理认定:</pdf:text>
-        
-        
-        <pdf:text point="34,209">当事人赔（补）偿</pdf:text>
-        <pdf:text point="121,209">元。当事人必须在收到本通知</pdf:text>
-        <pdf:text point="23,219">书之日起15日内持本通知书到</pdf:text>
-        <pdf:text point="130,219">缴纳路产赔（补）偿费。</pdf:text>
-        <pdf:line fromPoint="74,214" toPoint="120.5,214" lineWidth="0.5"/>
+        <pdf:text point="23,198.5">规定，本单位依法做出如下公路赔（补）偿处理认定:</pdf:text>
+        <pdf:text point="34,209.5">当事人赔（补）偿</pdf:text>
+        <pdf:text point="124,209.5">元。当事人必须在收到本通知</pdf:text>
+        <pdf:text point="23,220.5">书之日起15日内持本通知书到</pdf:text>
+        <pdf:text point="133.5,220.5">缴纳路产赔（补）偿费。</pdf:text>
+        <pdf:line fromPoint="76.5,214.5" toPoint="123.5,214.5" lineWidth="0.5"/>
         <!--   rect="{74,204},{50,25}   frame   {x,y}{width,height}   -->
-        <pdf:paragraph rect="{74,205},{50,25}" indent="head:0" lineHeight="4" static="NO" fontSize="10">{{ payDetail }}</pdf:paragraph>
-        <pdf:line fromPoint="91.5,224" toPoint="130,224" lineWidth="0.5"/>
-        <pdf:paragraph rect="{93,216},{36,55}" indent="head:0" lineHeight="4"  static="NO" fontSize="10">{{ paymentPlace }}</pdf:paragraph>
+        <pdf:paragraph rect="{76,205.5},{49,25}" indent="head:0" lineHeight="4" static="NO" fontSize="10">{{ payDetail }}</pdf:paragraph>
+        <pdf:line fromPoint="94,225.5" toPoint="133,225.5" lineWidth="0.5"/>
+        <pdf:paragraph rect="{95,218},{37,55}" indent="head:0" lineHeight="4"  static="NO" fontSize="10">{{ paymentPlace }}</pdf:paragraph>
         <pdf:text point="75,217"></pdf:text>
-        
-        
-        <pdf:text point="34,229">当事人对本通知书认定的事实和赔（补）偿费数额有疑义的，可在收</pdf:text>
-        <pdf:text point="25,240">到本通知书之日起60日内向</pdf:text>
-        <pdf:line fromPoint="85,245" toPoint="122,245" lineWidth="0.8"/>
-        <pdf:text point="88,241" static="NO" fontSize="10">{{ reviewOrgan }}</pdf:text>
-        <pdf:text point="123,240">申请复核，或者依照《民事诉</pdf:text>
-        <pdf:text point="25,251">讼法》的规定向人民法院提起民事起诉。</pdf:text>
-        <pdf:text point="108,270">公路赔（补）偿认定单位（印章）</pdf:text>
-        <pdf:text point="132,282">年     月     日</pdf:text>
-        <pdf:text point="121,283" static="NO" fontSize="10">{{year}}</pdf:text>
-        <pdf:text point="140,283" static="NO" fontSize="10">{{month}}</pdf:text>
-        <pdf:text point="155,283" static="NO" fontSize="10">{{day}}</pdf:text>
+    
+        <pdf:text point="34,231">当事人对本通知书认定的事实和赔（补）偿费数额有疑义的，可在收</pdf:text>
+        <pdf:text point="25,242">到本通知书之日起60日内向</pdf:text>
+        <pdf:line fromPoint="90,247" toPoint="126,247" lineWidth="0.8"/>
+        <pdf:text point="90.5,242" maxWidth = "35" static="NO" fontSize="10" >{{ reviewOrgan }}</pdf:text>
+        <pdf:text point="126,242">申请复核，或者依照《民事诉</pdf:text>
+        <pdf:text point="25,253">讼法》的规定向人民法院提起民事起诉。</pdf:text>
+        <!--    <pdf:text point="108,270">公路赔（补）偿认定单位（印章）</pdf:text>    -->
+        <pdf:text point="143,279">年     月     日</pdf:text>
+        <pdf:text point="131,280" static="NO" fontSize="10">{{year}}</pdf:text>
+        <pdf:text point="152,280" static="NO" fontSize="10">{{month}}</pdf:text>
+        <pdf:text point="167,280" static="NO" fontSize="10">{{day}}</pdf:text>
     </pdf:content>
 </pdf:template>

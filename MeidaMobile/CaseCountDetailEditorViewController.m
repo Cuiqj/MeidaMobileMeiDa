@@ -13,6 +13,10 @@
 @end
 
 @implementation CaseCountDetailEditorViewController
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    self.preferredContentSize = CGSizeMake(520, 640);
+}
 
 - (void)viewDidLoad
 {
